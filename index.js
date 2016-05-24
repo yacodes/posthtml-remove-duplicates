@@ -12,7 +12,7 @@ module.exports = function plugin(selector) {
 			var stringified = JSON.stringify(node);
 
 			if (nodes.indexOf(stringified) !== -1) {
-				return null;
+				return;
 			}
 
 			nodes.push(stringified);
