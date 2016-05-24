@@ -1,6 +1,6 @@
 {
   "name": "posthtml-remove-duplicates",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Remove duplicate elements from your html",
   "main": "index.js",
   "scripts": {

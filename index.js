@@ -9,7 +9,7 @@ module.exports = function plugin(selector) {
 		var nodes = [];
 
 		tree.match(match(selector), function (node) {
-			const stringified = JSON.stringify(node);
+			var stringified = JSON.stringify(node);
 
 			if (nodes.indexOf(stringified) !== -1) {
 				return null;
