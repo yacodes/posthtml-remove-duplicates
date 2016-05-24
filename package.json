@@ -1,10 +1,11 @@
 {
   "name": "posthtml-remove-duplicates",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Remove duplicate elements from your html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc ava",
+    "pretest": "xo"
   },
   "keywords": [
     "posthtml",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "ava": "^0.14.0",
     "nyc": "^6.4.4",
+    "posthtml": "^0.8.7",
     "xo": "^0.15.1"
   },
   "nyc": {

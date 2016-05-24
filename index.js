@@ -1,7 +1,5 @@
 'use strict';
 
-var fs = require('fs');
-var path = require('path');
 var match = require('posthtml-match-helper');
 
 module.exports = function plugin(selector) {
@@ -10,7 +8,7 @@ module.exports = function plugin(selector) {
 	return function parse(tree) {
 		var nodes = [];
 
-		tree.match(match(selector), function(node) {
+		tree.match(match(selector), function (node) {
 			const stringified = JSON.stringify(node);
 
 			if (nodes.indexOf(stringified) !== -1) {
