@@ -1,0 +1,43 @@
+{
+  "name": "posthtml-remove-duplicates",
+  "version": "0.0.0",
+  "description": "Remove duplicate elements from your html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "posthtml",
+    "parser",
+    "transform",
+    "html",
+    "module",
+    "duplicates",
+    "clean"
+  ],
+  "author": "Aleksandr Yakunichev <canvaskisa@gmail.com> (https://github.com/canvaskisa)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canvaskisa/posthtml-remove-duplicates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/canvaskisa/posthtml-remove-duplicates/issues"
+  },
+  "homepage": "https://github.com/canvaskisa/posthtml-remove-duplicates",
+  "dependencies": {
+    "posthtml-match-helper": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "nyc": "^6.4.4",
+    "xo": "^0.15.1"
+  },
+  "nyc": {
+    "lines": 100,
+    "branches": 100,
+    "statements": 100,
+    "functions": 100,
+    "check-coverage": true
+  }
+}
